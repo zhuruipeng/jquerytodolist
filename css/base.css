@@ -1,0 +1,160 @@
+body,ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+h1 { text-align:center }
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    position: relative;
+}
+body {
+   background-color: #1b4d7596;
+    opacity: 0.9;
+    color: #fff;
+}
+.task-item {
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 5px;
+   background-color: white;
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 24px;
+    color: black;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: background .5s;
+}
+.task-item:hover{
+    background: #ddd;
+}
+input[type=checkbox] {
+
+}
+input[type=text]{
+    height: 50px;
+    line-height: 50px;
+    outline: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding-left: 15px;
+}
+input[type=date] {
+    width:90%;
+    outline: none;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    height: 50px;
+    background: #ccc;
+}
+.remind {
+    width: 100%;
+    /*display: flex;*/
+    height: 50px;
+    justify-content: space-between;
+}
+.remind>label {
+
+}
+.remind>button {
+    height: 50px;
+}
+.add-task {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.add-task>input {
+    width: 85%;
+    height: 50px;
+}
+.add-task>button {
+    width: 10%;
+    height: 50px;
+}
+button{
+    background: greenyellow;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #fff;
+    height: 50px;
+    outline: none;
+}
+button:hover {
+    color: black;
+    background-color: aqua;
+}
+.mask-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    opacity: 0.7;
+    display: none;
+}
+.show-detail {
+    display: none;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    height: 500px;
+    background: #fff;
+    z-index: 1;
+    border-radius: 12px;
+}
+.detail-item{
+    height: 50px;
+    color: #000;
+    margin:15px 0 0 15px;
+    font-weight: bold;
+}
+textarea{
+    border: none;
+    width: 90%;
+    height: 100px;
+    background: #ccc;
+    margin-left: 5px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+.action {
+    padding-right: 15px;
+    color: #999;
+}
+.action:hover{
+    color: #333333;
+}
+.float-right{
+    float: right;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+.box input {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 320px;
+}
+.quit{
+    margin:10px;
+    height: 40px;
+    width: 40px;
+    color: #000;
+    cursor: pointer;
+}
+.quit img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>My To do App</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+<h1>我的todo任务</h1>
+<div class="container">
+    <div class="show-detail">
+        <!--<div class="box">-->
+            <!--<div class="detail-item">下午记得买菜</div>-->
+            <!--<div class="quit"><img src="image/退出.png" alt=""></div>-->
+        <!--</div>-->
+        <!--<div class="remind">-->
+            <!--<label>-->
+                <!--<input type="date">-->
+            <!--</label>-->
+            <!--<textarea>123</textarea>-->
+            <!--<button>提交</button>-->
+        <!--</div>-->
+    </div>
+    <div class="mask-detail">
+    </div>
+    <li class="add-task">
+    <input name = 'content' type="text" placeholder="eg:下午看书"  autocomplete=false autofocus=autofocus>
+    <button id="submit">提交</button>
+</li>
+    <ul class="task-list">
+        <!--<li class="task-item">-->
+            <!--<span><input type="checkbox">-->
+            <!--</span>-->
+            <!--<span class="task-content">content</span>-->
+            <!--<span>delete</span>-->
+            <!--<span>detail</span>-->
+        <!--</li>-->
+        <li>
+        </li>
+    </ul>
+</div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/store/dist/store.legacy.min.js"></script>
+<script src="js/base.js"></script>
+</body>
+</html>
