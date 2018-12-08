@@ -39,19 +39,19 @@ input[type=text]{
     height: 50px;
     line-height: 50px;
     outline: none;
-    width: 100%;
+    /*width: 100%;*/
     border: 1px solid #ccc;
     border-radius: 15px;
     padding-left: 15px;
 }
-input[type=date] {
+.datetime {
     width:90%;
     outline: none;
     margin: 5px;
     border: 1px solid #ccc;
     border-radius: 15px;
     height: 50px;
-    background: #ccc;
+    /*background: #ccc;*/
 }
 .remind {
     width: 100%;
@@ -157,4 +157,30 @@ textarea{
 .quit img{
     width: 100%;
     height: 100%;
+}
+.completed{
+    color: #aaa;
+    background: #ccc;
+    opacity: 0.4;
+}
+.completed:after {
+    content: '';
+    height: 1px;
+    margin-left: 20px;
+    width: 70%;
+    top: -25px;
+    position: relative;
+    background: #000;
+    z-index: 1999;
+    display: block;
+}
+.msg{
+    display: none;
+    text-align: center;
+    background: yellow;
+    padding: 10px;
+    color: #000000;
+}
+.alert{
+    opacity: 0;
 }
